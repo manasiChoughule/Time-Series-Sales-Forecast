@@ -1,3 +1,4 @@
+![Logo](https://www.crmsoftwareblog.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/sales-forecast-webinar-image-1-625x417.jpeg.webp)
 
 # Retail Giant Sales Forecasting
 
