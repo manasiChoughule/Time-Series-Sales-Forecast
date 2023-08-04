@@ -43,20 +43,20 @@ EU (European Union)	 |
 LATAM (Latin America) |	 
 US (United States)	|  
 
-Based on these, there are 21 unique "Market-Segments" for which the sales forecasts can be made. That is the dataset needs to be prepared such that you get the Order-Date, Sales and Profit for the 21 market segments.
+Based on these, there are 21 unique "Market-Segments" for which the sales forecasts can be made. That is the dataset needs to be prepared such that you get the Order-Date, Sales, and Profit for the 21 market segments.
 
-Now, due to certain unpredictable circumstances in the market, as a company, you are prioritizing only the best and most consistent market segment in terms of profitability. You want to see which market segment is the most consistently profitable. And then, you want to forecast the sales for that most consistently profitable market-segment only. This way you know that the market region your company is investing in will be beneficial for the company as the forecasts will be reliable. As of now, you do not want to focus on other market segments that might have not been very consistent and profitable to your company.
-
- 
-
-So, not all of these 21 market segments are important from the store’s point of view. You need to find out the most consistently profitable market-segment from the above and forecast the sales and demand for that single market-segment only and not for all.
+Now, due to certain unpredictable circumstances in the market, as a company, you are prioritizing only the best and most consistent market segment in terms of profitability. You want to see which market segment is the most consistently profitable. And then, you want to forecast the sales for that most consistently profitable market segment only. This way you know that the market region your company is investing in will be beneficial for the company as the forecasts will be reliable. As of now, you do not want to focus on other market segments that might have not been very consistent and profitable to your company.
 
  
 
-Now the question is how do you find that most profitable market segment from the 21 market segments?
+So, not all of these 21 market segments are important from the store’s point of view. You need to find out the most consistently profitable market segment from the above and forecast the sales and demand for that single market segment only and not for all.
+
+ 
+
+Now the question is how do you find the most profitable market segment from the 21 market segments?
 ## How to find the most profitable market segment?
 
-By now, it’s clear that you only need to work on one market-segment which is the most consistently profitable. To find the most consistently profitable market-segment you will be using a measure called "Coefficient of Variation (CoV)". The coefficient of variation or CoV is nothing but the ratio of the standard deviation to mean for the data that it is being calculated for.
+By now, it’s clear that you only need to work on one market segment which is the most consistently profitable. To find the most consistently profitable market segment you will be using a measure called "Coefficient of Variation (CoV)". The coefficient of variation or CoV is nothing but the ratio of the standard deviation to the mean for the data that it is being calculated for.
 
  
 
@@ -64,12 +64,12 @@ But why consider the coefficient of variation here and not the standard deviatio
 
  
 
-The coefficient of variation is a ratio of the standard deviation to mean. Once you have prepared the data such that you have the Order-Date, Sales and Profit against each of the 21 market segments, and not in the manner as it was in the initial dataset, you can check the standard deviation and the mean calculated on profit for all the 21 market segments and compare. You will find that these values vary a lot and hence it is meaningless to compare the 21 market segment's profits based on the standard deviation and their mean.
+The coefficient of variation is a ratio of the standard deviation to the mean. Once you have prepared the data such that you have the Order-Date, Sales, and Profit against each of the 21 market segments, and not in the manner as it was in the initial dataset, you can check the standard deviation and the mean calculated on profit for all the 21 market segments and compare. You will find that these values vary a lot and hence it is meaningless to compare the 21 market segment's profits based on the standard deviation and their mean.
 ## Forecasting Modeling
 
-* After spliting the data into test-train, I have decomposed the data series to understand it better. 
+* After splitting the data into test-train, I have decomposed the data series to understand it better. 
 
-* Prerformed SARIMA, Holt-Winters’ exponential smoothing - Additive, Holt-Winters’ exponential smoothing - Multiplicative methods on the data.
+* Performed SARIMA, Holt-Winters’ exponential smoothing - Additive, Holt-Winters’ exponential smoothing - Multiplicative methods on the data.
 ## Tech Stack
 
 **Programming Language:** Python 
@@ -79,3 +79,27 @@ The coefficient of variation is a ratio of the standard deviation to mean. Once 
 **Models:** Holt-Winters’ exponential smoothing - Additive, Holt-Winters’ exponential smoothing - Multiplicative, SARIMA model
 
 ## Results
+
+* Holt-Winters' Exponential Smoothing Technique - Additive:
+![additive](https://github.com/manasiChoughule/Time-Series-Sales-Forecast/assets/25337745/7cf78a14-4a5a-4953-b7bf-c807c61d0d05)
+
+* Holt-Winters' Exponential Smoothing Technique - Multiplicative:
+![multiplitive](https://github.com/manasiChoughule/Time-Series-Sales-Forecast/assets/25337745/24ec8516-b37b-4e97-8fc4-d69d4f574c68)
+
+* Seasonal auto regressive integrated moving average (SARIMA)
+![sarima](https://github.com/manasiChoughule/Time-Series-Sales-Forecast/assets/25337745/62b3233f-bc1f-42a2-acb2-af5380e5d915)
+
+
+
+Attributes  | RMSE  | MAPE
+------------- | ------------- | -------------
+Holt Winters' additive method	  | 10624.26	| 13.02
+Holt Winters' multiplicative method  | 10931.27	| 17.17
+Seasonal autoregressive integrated moving average (SARIMA)  | 8715.57	| 10.45
+
+## Conclusion 
+
+Among all the methods done above, we can conclude that the forecast done using the SARIMA method is able to predict the sales closer to the actual values
+
+
+
