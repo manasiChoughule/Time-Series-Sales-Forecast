@@ -78,3 +78,4 @@ The coefficient of variation is a ratio of the standard deviation to mean. Once 
 
 **Models:** Holt-Winters’ exponential smoothing - Additive, Holt-Winters’ exponential smoothing - Multiplicative, SARIMA model
 
+## Results
