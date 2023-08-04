@@ -91,7 +91,7 @@ The coefficient of variation is a ratio of the standard deviation to the mean. O
 
 
 
-Attributes  | RMSE  | MAPE
+METHOD  | RMSE  | MAPE
 ------------- | ------------- | -------------
 Holt Winters' additive method	  | 10624.26	| 13.02
 Holt Winters' multiplicative method  | 10931.27	| 17.17
