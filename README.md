@@ -71,4 +71,4 @@ After meticulous analysis, the **Seasonal AutoRegressive Integrated Moving Avera
 
 For comprehensive code implementation and analysis, explore the Jupyter notebook `sales_forecast.ipynb`. Access the complete dataset through `Global+Superstore+Data.csv`.
 
-For inquiries and collaborations, reach out to us at [mchoughule96@gmail.com](mailto:mchoughule96@gmail.com).
+For inquiries and collaborations, reach out to me at [mchoughule96@gmail.com](mailto:mchoughule96@gmail.com).
